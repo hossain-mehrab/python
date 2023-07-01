@@ -123,6 +123,33 @@ l5*3
 print(l5)
 print(l4+l5)
 
-# Dictionary (mutable and value of key)
+# Dictionary (mutable, item and value of key)
+fruit1 ={
+  "Mango": 100, 
+  "Apple": 200, 
+  "Orange": 300
+}
+print(type(fruit1))
+print(fruit1.items())
+print(fruit1.keys())
+print(fruit1.values())
+fruit1["Lemon"]= 400
+print(fruit1)
+fruit1["Mango"]= 50
+print(fruit1)
+
+fruit2 ={
+  "Mango1": 100, 
+  "Apple2": 200, 
+  "Orange3": 300
+}
+
+fruit1.update(fruit2)
+print(fruit1)
+
+fruit1.pop("Lemon")
+print(fruit1)
+
+# Set (mutable, item and value of key)
 # %%
 
