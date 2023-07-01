@@ -150,6 +150,71 @@ print(fruit1)
 fruit1.pop("Lemon")
 print(fruit1)
 
-# Set (mutable, item and value of key)
+# Set (duplicate value are not accepted)
 # %%
+set1 = {1, "man", True, 1, "man", True}
+print(set1)
 
+set2 = {1, "man", True}
+set2.add("a")
+print(set2)
+
+set2.remove("man")
+print(set2)
+
+set2.update(["run",3, False])
+print(set2)
+
+set1.union(set2)
+print(set1)
+
+set1.intersection(set2)
+print(set1)
+
+# If statement
+a = 10
+b = 20
+if a>b:
+  print("a is greater than b")
+else:
+  print("a is not greater than b")
+
+a1 = 5
+b1 = 10
+c1 = 15
+if (a1>b1 & a1>c1):
+  print("a1 is greater than b1, and c1")
+
+elif (b1>a1 & b1>c1):
+  print("b1 is greater than a1, and c1")
+
+else:
+  print("c1 is greater than a1, and b1")
+
+# If statement (Tuples)
+a3 = (1, 3, 4)
+if 1 in a3:
+  print("1 in the Tuple")
+else:
+  print("1 is not in the Tuple")
+
+# If statement (List)
+a4 = [1, 3, 4]
+if a4[0]==1:
+  a4[0]=a4[0]+100
+  print(a4)
+else:
+  print("Nothing")
+
+# If statement (Dictonary)
+a5 = {
+  "Man":20,
+  "Women":30
+}
+if a5["Man"]==20:
+  a5["Man"]=a5["Man"]+100
+  print(a4)
+else:
+  print("Nothing")
+
+# %%
