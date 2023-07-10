@@ -218,3 +218,15 @@ else:
   print("Nothing")
 
 # %%
+# If statement (Dictonary)
+a5 = {
+  "Man":20,
+  "Women":30
+}
+if a5["Man"]==20:
+  a5["Man"]=a5["Man"]+100
+  print(a4)
+else:
+  print("Nothing")
+
+# %%
